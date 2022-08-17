@@ -1,0 +1,503 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  color: #464646;
+}
+
+.encabezado {
+  background: #f5f5f5;
+  margin: 0;
+  padding: 30px 30px 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.encabezado p {
+  margin: 0;
+}
+
+.menu {
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+
+.menu__item {
+  margin: 10px;
+}
+.menu__item a {
+  text-decoration: none;
+  color: #464646;
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0 30px 0 40px;
+}
+
+.titulo__contenido {
+  padding-bottom: 0;
+}
+.titulo__contenido h1 {
+  margin: 0;
+}
+.titulo__contenido a {
+  text-decoration: none;
+  color: #464646;
+  margin-right: 10px;
+}
+
+.foto {
+  width: 250px;
+  height: 250px;
+}
+.foto img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.aboutme {
+  padding: 30px 495px 20px 40px;
+  background: #eaf2fd;
+}
+
+.skills {
+  background: #f5f5f5;
+  padding: 30px 30px 20px 40px;
+}
+
+.skills__title {
+  text-align: center;
+}
+
+.skills__container {
+  display: flex;
+}
+
+.skill__item {
+  background: white;
+  width: 16.66%;
+  margin: 10px;
+  height: 170px;
+}
+.skill__item span,
+.skill__item p {
+  padding-left: 20px;
+}
+
+.icon {
+  padding-top: 80px;
+  font-size: 30px;
+  color: blue;
+}
+
+.hobbies {
+  padding: 30px 30px 20px 40px;
+  background: #f5f5f5;
+}
+.hobbies h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.hobbies__title {
+  text-align: center;
+}
+
+.hobbies-container {
+  display: flex;
+}
+
+.hobbies__item {
+  background: white;
+  width: 16.66%;
+  margin: 10px;
+  height: 170px;
+}
+.hobbies__item span,
+.hobbies__item p {
+  padding-left: 20px;
+}
+
+.formacion {
+  background: #eaf2fd;
+  padding: 30px 30px 20px 40px;
+  text-align: center;
+}
+.formacion h2 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.formacion__item {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.logos {
+  width: 190px;
+  height: 150px;
+}
+
+.ues {
+  height: 190px;
+}
+
+.formacion__container {
+  display: flex;
+  justify-content: center;
+}
+
+.formacion__card {
+  width: 33.33%;
+  margin: 10px;
+}
+.formacion__card p {
+  text-align: start;
+  color: #464646;
+  margin: 5px;
+}
+.formacion__card p:nth-child(2) {
+  font-size: 22px;
+  font-weight: bold;
+}
+.formacion__card p:nth-child(3) {
+  font-size: 16px;
+}
+
+.poryects {
+  background: #f5f5f5;
+  padding: 30px 30px 20px 40px;
+}
+.poryects h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.proyects__container {
+  display: flex;
+  align-items: center;
+}
+.proyects__container img {
+  width: 750px;
+  height: 400px;
+  margin: 20px 50px;
+}
+.proyects__container p {
+  margin: 0;
+}
+
+.proyects__descrip p:nth-child(1) {
+  font-weight: bold;
+}
+
+.repositorio {
+  border-color: #2a7ae4;
+  color: #2a7ae4;
+  width: 105px;
+  height: 51px;
+}
+
+.demo {
+  background: #2a7ae4;
+  border-color: #2a7ae4;
+  color: white;
+  width: 105px;
+  height: 51px;
+}
+
+.contacto {
+  display: flex;
+  background: #eaf2fd;
+}
+.contacto h2 {
+  margin-top: 0;
+}
+.contacto p {
+  margin: 0;
+}
+
+.contacto__title {
+  margin-left: 20px;
+}
+.contacto__title button {
+  width: 144px;
+  height: 51px;
+  background: #2a7ae4;
+  color: white;
+  border: none;
+}
+
+.img-contact {
+  height: 100%;
+}
+
+.formulario {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.formulario label {
+  padding: 5px;
+  position: absolute;
+  font-size: 15px;
+  transition: all 0.25s;
+}
+.formulario input {
+  margin-bottom: 30px;
+  border: none;
+  background: white;
+}
+
+.form__name,
+.form__email {
+  display: flex;
+  flex-direction: column;
+  width: 656px;
+  height: 90px;
+}
+.form__name input,
+.form__email input {
+  height: 100%;
+  width: 100%;
+}
+.form__name input:focus,
+.form__email input:focus {
+  outline: none;
+  padding: 10px;
+}
+.form__name input:focus + label,
+.form__email input:focus + label {
+  font-size: 10px;
+  transition: all 0.25s;
+}
+
+.input-email {
+  color: #2A7AE4;
+}
+
+.form__asunto input {
+  width: 656px;
+  height: 56px;
+}
+.form__asunto input:focus {
+  padding: 10px;
+}
+
+.form__mensaje textarea {
+  width: 660px;
+  height: 133px;
+  resize: none;
+}
+
+.msm:focus {
+  padding: 10px;
+}
+
+.message-error {
+  display: none;
+}
+
+.input-invalid input {
+  border: 1px solid #df2525;
+  border-radius: 7px;
+  color: #df2525;
+}
+
+.input-invalid input::placeholder {
+  color: #df2525;
+}
+
+.input-invalid textarea {
+  color: #df2525;
+}
+
+.input-invalid textarea::placeholder {
+  color: #df2525;
+}
+
+.input-invalid label {
+  color: #df2525;
+}
+
+.input-invalid .message-error {
+  color: #df2525;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.btn-enviar {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu__item {
+    display: none;
+  }
+  .menu li:nth-last-child(1) {
+    display: flex;
+    margin: 0;
+  }
+  .foto {
+    width: 140px;
+    height: 140px;
+  }
+  .aboutme {
+    padding: 30px 30px 20px 40px;
+  }
+  .skills {
+    padding: 30px 0px 20px 30px;
+    text-align: center;
+  }
+  .skills__container {
+    flex-wrap: wrap;
+  }
+  .skill__item {
+    width: 28.5714285714%;
+  }
+  .hobbies {
+    padding: 30px 0px 20px 40px;
+  }
+  .hobbies-container {
+    flex-wrap: wrap;
+  }
+  .hobbies__item {
+    width: 28.5714285714%;
+  }
+  .formacion__item {
+    height: 120px;
+  }
+  .logos {
+    width: 140px;
+    height: 70px;
+  }
+  .ues {
+    height: 80px;
+  }
+  .formacion__card {
+    width: 100%;
+    margin: 10px;
+  }
+  .poryects {
+    padding: 30px 30px 20px 40px;
+  }
+  .proyects__container img {
+    width: 330px;
+    height: 200px;
+  }
+  .contacto__title {
+    width: 100%;
+    padding-right: 30px;
+  }
+  .img-contact {
+    display: none;
+  }
+  .formulario {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .formulario label {
+    padding: 5px;
+    position: absolute;
+    font-size: 15px;
+    transition: all 0.25s;
+    width: 100%;
+  }
+  .formulario input {
+    margin-bottom: 30px;
+    border: none;
+    background: white;
+    width: 100%;
+  }
+  .formulario textarea {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .form__name,
+.form__email {
+    width: 100%;
+  }
+  .btn-enviar {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .titulo {
+    display: flex;
+    flex-direction: column;
+  }
+  .titulo__contenido {
+    order: 2;
+  }
+  .foto {
+    width: 140px;
+    height: 140px;
+    order: 1;
+  }
+  .skills {
+    padding: 30px 0px 20px 30px;
+  }
+  .skill__item {
+    width: 40%;
+  }
+  .hobbies__item {
+    width: 40%;
+  }
+  .formacion {
+    padding: 30px 40px 20px 40px;
+  }
+  .formacion__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .formacion__item {
+    height: 100px;
+  }
+  .logos {
+    width: 90px;
+    height: 100px;
+  }
+  .ues {
+    height: 100px;
+  }
+  .poryects {
+    padding: 30px 30px 20px 10px;
+  }
+  .proyects__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  .proyects__container img {
+    order: 2;
+    width: 100%;
+    height: 150px;
+    margin: 20px 0;
+  }
+  .proyects__container p {
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

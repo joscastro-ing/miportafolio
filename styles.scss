@@ -1,0 +1,609 @@
+//Variables
+$color1: #f5f5f5;
+$color2: #eaf2fd;
+$color-letra: #464646;
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    color: $color-letra;
+}
+
+//-------------------------Header------------------------------
+.encabezado {
+    background: $color1;
+    margin: 0;
+    padding: 30px 30px 20px 40px;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        margin: 0;
+    }
+}
+
+.menu {
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+
+.menu__item {
+    margin: 10px;
+
+    a {
+        text-decoration: none;
+        color: $color-letra;
+    }
+}
+
+//---------------------------------section titulo------------------------
+.titulo {
+    display: flex;
+    align-items: center;
+    background: $color1;
+    margin: 0;
+    padding: 0 30px 0 40px;
+}
+
+.titulo__contenido {
+    padding-bottom: 0;
+
+    h1 {
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-letra;
+        margin-right: 10px;
+    }
+
+}
+
+.foto {
+    width: 250px;
+    height: 250px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+}
+
+//---------------------------------section aboutme-------------------------
+.aboutme {
+    padding: 30px 495px 20px 40px;
+    background: $color2;
+}
+
+//---------------------------------section Skills-------------------------
+.skills {
+    background: $color1;
+    padding: 30px 30px 20px 40px;
+}
+
+.skills__title {
+    text-align: center;
+}
+
+.skills__container {
+    display: flex;
+}
+
+.skill__item {
+    background: white;
+    width: 16.66%;
+    margin: 10px;
+    height: 170px;
+
+
+    span,
+    p {
+        padding-left: 20px;
+    }
+
+}
+
+.icon {
+    padding-top: 80px;
+    font-size: 30px;
+    color: blue;
+}
+
+//---------------------------------section Hobbies-------------------------
+.hobbies {
+    padding: 30px 30px 20px 40px;
+    background: $color1;
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+}
+
+.hobbies__title {
+    text-align: center;
+}
+
+.hobbies-container {
+    display: flex;
+}
+
+.hobbies__item {
+    background: white;
+    width: 16.66%;
+    margin: 10px;
+    height: 170px;
+
+    span,
+    p {
+        padding-left: 20px;
+    }
+}
+
+//---------------------------------section formacion-------------------------
+.formacion {
+    background: $color2;
+    padding: 30px 30px 20px 40px;
+
+    h2 {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    text-align: center;
+}
+
+.formacion__item {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.logos {
+    width: 190px;
+    height: 150px;
+}
+
+.ues {
+    height: 190px;
+}
+
+.formacion__container {
+    display: flex;
+    justify-content: center;
+}
+
+.formacion__card {
+    width: 33.33%;
+    margin: 10px;
+
+    p {
+        text-align: start;
+        color: $color-letra;
+        margin: 5px;
+    }
+
+    p:nth-child(2) {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    p:nth-child(3) {
+        font-size: 16px;
+    }
+
+}
+
+//---------------------------------section proyects-------------------------
+.poryects {
+    background: $color1;
+    padding: 30px 30px 20px 40px;
+
+    h2 {
+        margin: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+.proyects__container {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 750px;
+        height: 400px;
+        margin: 20px 50px;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.proyects__descrip {
+    p:nth-child(1) {
+        font-weight: bold;
+    }
+}
+
+.repositorio {
+    border-color: #2a7ae4;
+    color: #2a7ae4;
+    width: 105px;
+    height: 51px;
+}
+
+.demo {
+    background: #2a7ae4;
+    border-color: #2a7ae4;
+    color: white;
+    width: 105px;
+    height: 51px;
+}
+
+//---------------------------------section contacto-------------------------
+.contacto {
+    display: flex;
+    background: $color2;
+
+    h2 {
+        margin-top: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.contacto__title {
+    margin-left: 20px;
+
+    button {
+        width: 144px;
+        height: 51px;
+        background: #2a7ae4;
+        color: white;
+        border: none;
+    }
+}
+
+.img-contact {
+    height: 100%;
+}
+
+.formulario {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    label {
+        padding: 5px;
+        position: absolute;
+        font-size: 15px;
+        transition: all 0.25s;
+
+    }
+
+    input {
+        margin-bottom: 30px;
+        border: none;
+        background: white;
+    }
+
+}
+
+.form__name,
+.form__email {
+    display: flex;
+    flex-direction: column;
+    width: 656px;
+    height: 90px;
+
+    input {
+        height: 100%;
+        width: 100%;
+    }
+
+    input:focus {
+        outline: none;
+        padding: 10px;
+    }
+
+    input:focus+label {
+        font-size: 10px;
+        transition: all 0.25s;
+    }
+}
+
+.input-email {
+    color: #2A7AE4;
+}
+
+.form__asunto {
+    input {
+        width: 656px;
+        height: 56px;
+    }
+
+    input:focus {
+        padding: 10px;
+    }
+}
+
+.form__mensaje {
+    textarea {
+        width: 660px;
+        height: 133px;
+        resize: none;
+    }
+
+}
+
+.msm:focus {
+    padding: 10px;
+}
+
+.message-error {
+    display: none;
+}
+
+.input-invalid input {
+    border: 1px solid #df2525;
+    border-radius: 7px;
+    color: #df2525;
+}
+
+.input-invalid input::placeholder {
+    color: #df2525;
+}
+
+.input-invalid textarea {
+    color: #df2525;
+}
+
+.input-invalid textarea::placeholder {
+    color: #df2525;
+}
+
+.input-invalid label {
+    color: #df2525;
+}
+
+.input-invalid .message-error {
+    color: #df2525;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.btn-enviar {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+//---------------------------------FOOTER-------------------------
+footer {
+    text-align: center;
+}
+
+//---------------------------------MEDIAQUERIES-------------------------
+@media only screen and (max-width: 768px) {
+
+    //-------------------------Header------------------------------
+    .menu__item {
+        display: none;
+    }
+
+    .menu li:nth-last-child(1) {
+        display: flex;
+        margin: 0;
+    }
+
+    //---------------------------------section titulo-------------------------
+    .foto {
+        width: 140px;
+        height: 140px;
+    }
+
+    //---------------------------------section aboutme-------------------------
+    .aboutme {
+        padding: 30px 30px 20px 40px;
+    }
+
+    //-------------------section Skills---------------------
+    .skills {
+        padding: 30px 0px 20px 30px;
+        text-align: center;
+
+    }
+
+    .skills__container {
+        flex-wrap: wrap;
+
+    }
+
+    .skill__item {
+        width: (100%/3.5);
+    }
+
+    //-------------------section Hobbies------------------------
+    .hobbies {
+        padding: 30px 0px 20px 40px;
+
+    }
+
+    .hobbies-container {
+        flex-wrap: wrap;
+    }
+
+    .hobbies__item {
+        width: (100%/3.5);
+    }
+
+    //---------------------------------section formacion-------------------------
+    .formacion__item {
+        height: 120px;
+    }
+
+    .logos {
+        width: 140px;
+        height: 70px;
+    }
+
+    .ues {
+        height: 80px;
+    }
+
+    .formacion__card {
+        width: 100%;
+        margin: 10px;
+    }
+
+    //---------------------------------section proyects-------------------------
+    .poryects {
+        padding: 30px 30px 20px 40px;
+
+    }
+
+    .proyects__container {
+        img {
+            width: 330px;
+            height: 200px;
+        }
+    }
+
+    //---------------------------------section contacto-------------------------
+    .contacto__title {
+        width: 100%;
+        padding-right: 30px;
+    }
+
+    .img-contact {
+        display: none;
+    }
+
+    .formulario {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+
+        label {
+            padding: 5px;
+            position: absolute;
+            font-size: 15px;
+            transition: all 0.25s;
+            width: 100%;
+
+        }
+
+        input {
+            margin-bottom: 30px;
+            border: none;
+            background: white;
+            width: 100%;
+        }
+
+        textarea {
+            margin-bottom: 30px;
+            width: 100%;
+        }
+    }
+
+    .form__name,
+    .form__email {
+        width: 100%;
+    }
+
+    .btn-enviar {
+        margin-bottom: 30px;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    // ---------------------section titulo----------------------
+    .titulo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulo__contenido {
+        order: 2;
+    }
+
+    .foto {
+        width: 140px;
+        height: 140px;
+        order: 1;
+    }
+
+    // ---------------------section Skills----------------------
+    .skills {
+        padding: 30px 0px 20px 30px;
+    }
+    .skill__item {
+        width: (100%/2.5);
+    }
+
+    //-------------------section Hobbies------------------------
+    .hobbies__item {
+        width: (100%/2.5);
+    }
+
+    //---------------------------------section formacion-------------------------
+    .formacion {
+        padding: 30px 40px 20px 40px;
+    }
+    
+    .formacion__container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .formacion__item {
+        height: 100px;
+    }
+
+    .logos {
+        width: 90px;
+        height: 100px;
+    }
+
+    .ues {
+        height: 100px;
+    }
+    //---------------------------------section proyects-------------------------
+    .poryects {
+        padding: 30px 30px 20px 10px;
+    }
+    .proyects__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    
+        img {
+            order: 2; 
+            width: 100%;
+            height: 150px;
+            margin: 20px 0;
+        }
+    
+        p {
+            margin: 0;
+        }
+    }
+}
