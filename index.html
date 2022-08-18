@@ -183,24 +183,23 @@
             <div class="contacto__img">
                 <img src="img/contacto.png" alt="CONTACTO" class="img-contact">
             </div>
-
             <div class="contacto__title">
                 <h2>Contacto</h2>
                 <p>¿Quieres Contactarme?</p>
                 <p>Completa el siguiente formulario y me pondre en contracto contigo lo antes posible.</p>
                 <form action="" class="formulario">
                     <div class="form__name">
-                        <input type="text" name="nombre" id="nombre" class="nombre" placeholder="Escribe tu nombre aquí" required data-tipo="nombre">
+                        <input type="text" name="nombre" id="nombre" class="nombre" placeholder="Escribe tu nombre aquí" required data-tipo="nombre" autocomplete="off">
                         <label for="name">Nombre</label>
                         <span class="message-error">Este campo no es valido</span>                        
                     </div>
                     <div class="form__email">
-                        <input type="email" name="email" id="email" class="email" placeholder="alguien@example.com" required data-tipo="email">
+                        <input type="email" name="email" id="email" class="email" placeholder="alguien@example.com" required data-tipo="email" autocomplete="off">
                         <label class="input-email" for="email">Email</label>                        
                         <span class="message-error">Este campo no es valido</span>
                     </div>
                     <div class="form__asunto">
-                        <input type="text" placeholder="Asunto" name="asunto" id="asunto" class="asunto" required data-tipo="asunto">
+                        <input type="text" placeholder="Asunto" name="asunto" id="asunto" class="asunto" required data-tipo="asunto" autocomplete="off">
                         <span class="message-error">Este campo no es valido</span>
                     </div>
                     <div class="form__mensaje">

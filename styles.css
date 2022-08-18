@@ -221,6 +221,7 @@ main {
 
 .contacto {
   display: flex;
+  justify-content: center;
   background: #eaf2fd;
 }
 .contacto h2 {
@@ -232,6 +233,7 @@ main {
 
 .contacto__title {
   margin-left: 20px;
+  padding-left: 20px;
 }
 .contacto__title button {
   width: 144px;
@@ -239,6 +241,10 @@ main {
   background: #2a7ae4;
   color: white;
   border: none;
+}
+
+.contacto__img {
+  margin-right: 10px;
 }
 
 .img-contact {
@@ -257,7 +263,7 @@ main {
   transition: all 0.25s;
 }
 .formulario input {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   border: none;
   background: white;
 }
@@ -341,7 +347,7 @@ main {
 }
 
 .btn-enviar {
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -406,7 +412,7 @@ footer {
   }
   .contacto__title {
     width: 100%;
-    padding-right: 30px;
+    padding-right: 20px;
   }
   .img-contact {
     display: none;

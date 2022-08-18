@@ -1,5 +1,4 @@
-import { validador } from "./app.js";
-import { validador2 } from "./app.js";
+
 
 const btnEnviar = document.querySelector(".btn-enviar");
 const email = document.querySelector('.email');
@@ -8,18 +7,30 @@ const asunto = document.querySelector('.asunto');
 const mensaje = document.querySelector('.msm');
 
 
+var boolean;
 
-btnEnviar.addEventListener('click', (event) =>{
+
+btnEnviar.addEventListener('click', (event) => {
     event.preventDefault();
-    console.log(validador)
-    console.log(validador2)
-    if(validador && validador2){
-        window.location.href=`mailto:anibalqcastro14@gmail.com?subject=${asunto.value}&body=Nombre%3A%20${nombre.value}%0ACorreo%3A%20${email.value}%0AMensaje%3A%20${mensaje.value}`;
-    }
-    else{
+    const elements = [email.value, nombre.value, asunto.value, mensaje.value]
+        if(
+            email.value == "" ||
+            nombre.value == "" ||
+            asunto.value == "" ||
+            mensaje.value == "" 
+        ){
+            boolean = false
+        } else{
+            boolean = true
+        }
+    if(boolean){
+        window.location.href = `mailto:anibalqcastro14@gmail.com?subject=${asunto.value}&body=Nombre%3A%20${nombre.value}%0ACorreo%3A%20${email.value}%0AMensaje%3A%20${mensaje.value}`;
+    }else{
         alert("Completa el formulario");
     }
 });
+
+
 
 
 

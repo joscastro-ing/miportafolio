@@ -257,8 +257,8 @@ main {
 //---------------------------------section contacto-------------------------
 .contacto {
     display: flex;
+    justify-content: center;
     background: $color2;
-
     h2 {
         margin-top: 0;
     }
@@ -270,6 +270,7 @@ main {
 
 .contacto__title {
     margin-left: 20px;
+    padding-left: 20px;
 
     button {
         width: 144px;
@@ -278,6 +279,9 @@ main {
         color: white;
         border: none;
     }
+}
+.contacto__img{
+    margin-right: 10px;
 }
 
 .img-contact {
@@ -298,7 +302,7 @@ main {
     }
 
     input {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         border: none;
         background: white;
     }
@@ -389,7 +393,7 @@ main {
     margin-bottom: 10px;
 }
 .btn-enviar {
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -487,7 +491,7 @@ footer {
     //---------------------------------section contacto-------------------------
     .contacto__title {
         width: 100%;
-        padding-right: 30px;
+        padding-right: 20px;
     }
 
     .img-contact {
